@@ -10,6 +10,11 @@ import { InputNode } from './nodes/inputNode';
 import { LLMNode } from './nodes/llmNode';
 import { OutputNode } from './nodes/outputNode';
 import { TextNode } from './nodes/textNode';
+import { ConditionalNode } from './nodes/conditionalNode';
+import { TransformNode } from './nodes/transformNode';
+import { MergeNode } from './nodes/mergeNode';
+import { SplitNode } from './nodes/splitNode';
+import { FilterNode } from './nodes/filterNode';
 
 import 'reactflow/dist/style.css';
 
@@ -20,6 +25,11 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  conditional: ConditionalNode,
+  transform: TransformNode,
+  merge: MergeNode,
+  split: SplitNode,
+  filter: FilterNode,
 };
 
 const selector = (state) => ({
